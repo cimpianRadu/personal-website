@@ -1,15 +1,17 @@
 import '../styles/globals.css';
-import { ChakraProvider } from '@chakra-ui/react';
-import { Navigation } from '../components/Navigation';
-import { Header } from '../components/Header';
+import { ChakraProvider, Box } from '@chakra-ui/react';
+import { Navigation, Header, Footer } from '../components';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <ChakraProvider>
-        <Header />
-        <Navigation />
-        <Component {...pageProps} />
+        <Box bgGradient="linear(to-t, #e74c3c, #000000)">
+          <Header />
+          <Navigation />
+          <Component {...pageProps} />
+          <Footer />
+        </Box>
       </ChakraProvider>
     </>
   );

@@ -7,11 +7,11 @@
 }
 
 .leftIcon {
-  animation: lefty 1s linear forwards;
+  animation: lefty 0.7s linear forwards;
 }
 
 .rightIcon {
-  animation: righty 1s linear forwards;
+  animation: righty 0.7s linear forwards;
 }
 
 @keyframes lefty {
