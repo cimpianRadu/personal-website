@@ -1,0 +1,34 @@
+.button:hover {
+  background-color: transparent !important;
+}
+.button:focus {
+  box-shadow: 0 0 transparent !important;
+  border-color: red !important;
+}
+
+.leftIcon {
+  animation: lefty 0.7s linear forwards;
+}
+
+.rightIcon {
+  animation: righty 0.7s linear forwards;
+}
+
+@keyframes lefty {
+  0% {
+    transform: translateX(-70%) scale(0.4);
+  }
+
+  100% {
+    transform: scale(1) translateX(70%);
+  }
+}
+
+@keyframes righty {
+  0% {
+    transform: translateX(70%) scale(0.4);
+  }
+  100% {
+    transform: translateX(-10%) scale(1);
+  }
+}
