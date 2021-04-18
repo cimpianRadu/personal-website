@@ -1,6 +1,7 @@
 import { Heading, Flex, Spacer } from '@chakra-ui/react';
 import { SwithWithIcons } from '../SwitchWithIcons/SwitchWithIcons';
 import { Navigation } from '../Navigation/Navigation';
+import { routes } from '../../constants';
 
 export const Header = () => (
   <Flex
@@ -15,13 +16,7 @@ export const Header = () => (
         Radu G. Cîmpian
       </Heading>
     </Flex>
-    <Navigation
-      routes={[
-        { href: '/', title: 'Home' },
-        { href: '/projects', title: 'Projects' },
-        { href: '/about', title: 'About' },
-      ]}
-    />
+    <Navigation routes={routes} />
     <Spacer />
     <Flex flex={1} justifyContent="flex-end" alignItems="flex-end">
       <SwithWithIcons />

@@ -11,6 +11,7 @@ export const Navigation = ({ routes = [] }) => {
       justifyContent="space-evenly"
       alignItems="center"
       direction="row"
+      display={['none', 'none', 'flex']}
     >
       {routes.map((route) => (
         <NavItem
