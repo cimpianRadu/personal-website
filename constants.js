@@ -5,7 +5,16 @@ export const ROUTES = [
 ];
 
 export const SOCIAL_MEDIA_URL = {
-  LINKEDIN: 'https://www.linkedin.com/in/radu-cimpian-25372073/',
-  GITHUB: 'https://github.com/cimpianRadu',
-  TWEETER: 'https://twitter.com/RCimpian',
+  LINKEDIN: {
+    url: 'https://www.linkedin.com/in/radu-cimpian-25372073/',
+    label: 'LINKEDIN_PROFILE',
+  },
+  GITHUB: {
+    url: 'https://github.com/cimpianRadu',
+    label: 'GITHUB_ACCOUNT',
+  },
+  TWEETER: {
+    url: 'https://twitter.com/RCimpian',
+    label: 'TWEETER_PROFILE',
+  },
 };
