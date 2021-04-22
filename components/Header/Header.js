@@ -7,7 +7,7 @@ export const Header = () => (
   <Flex
     paddingY={3}
     paddingX={5}
-    // background="teal.50"
+    background="gray.900"
     position="sticky"
     top={0}
   >

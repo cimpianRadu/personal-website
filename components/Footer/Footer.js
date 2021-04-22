@@ -23,6 +23,7 @@ export const Footer = () => {
         paddingX={5}
         alignItems="center"
         justifyContent="space-around"
+        flexDirection={['column', 'column', 'row']}
       >
         <Box display={['flex', 'flex', 'none']}>
           <NavigationMobile routes={ROUTES} />
@@ -61,19 +62,21 @@ export const Footer = () => {
           </HStack>
         </Flex>
         <Flex alignItems="center">
-          <Flex alignItems="center">
+          <Box>
             <EmailIcon w={6} h={6} marginRight={1} color="gray.200" />
             <Link color="gray.200" href="mailto:radu.cimpian94@gmail.com">
               radu.cimpian94@gmail.com
             </Link>
-          </Flex>
+          </Box>
           <Center height={10} marginX={4}>
             <Divider orientation="vertical" />
           </Center>
-          <PhoneIcon w={5} h={5} color="gray.200" />
-          <Link color="gray.200" href="tel:+40-075-154-7174">
-            +40 (075) 154-7174
-          </Link>
+          <Box>
+            <PhoneIcon w={5} h={5} color="gray.200" />
+            <Link color="gray.200" href="tel:+40-075-154-7174">
+              +40 (075) 154-7174
+            </Link>
+          </Box>
         </Flex>
         <Box>
           <Text
