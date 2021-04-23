@@ -10,7 +10,6 @@ export const NavItem = ({ href, isActive, title, onToggle }) => {
             decoration={isActive ? 'underline' : 'none'}
             onClick={() => onToggle(href)}
             fontSize={isActive ? 'xl' : 'sm'}
-            color="gray.400"
           >
             {title}
           </Text>

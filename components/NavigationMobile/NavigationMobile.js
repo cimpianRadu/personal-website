@@ -19,7 +19,7 @@ export const NavigationMobile = ({ routes = [] }) => {
       />
       <MenuList>
         {routes.map((route) => (
-          <Link href={route.href}>
+          <Link href={route.href} key={route.title}>
             <a>
               <MenuItem justifyContent="center">{route.title}</MenuItem>
             </a>

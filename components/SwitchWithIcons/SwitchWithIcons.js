@@ -1,5 +1,5 @@
 import { useReducer } from 'react';
-import { Text, Box, Button } from '@chakra-ui/react';
+import { Text, Box, Button, useColorModeValue } from '@chakra-ui/react';
 import styles from './SwitchWIthIcons.module.css';
 
 const initialState = {
@@ -26,34 +26,42 @@ const reducer = (state, action) => {
       return initialState;
   }
 };
-export const SwithWithIcons = ({ leftIcon = '🌞', rightIcon = '🌙' }) => {
+export const SwithWithIcons = ({
+  leftIcon = '🌞',
+  rightIcon = '🌙',
+  onChange = () => {},
+  ariaLabel = '',
+}) => {
   const [state, dipatch] = useReducer(reducer, initialState);
+  const switchBackgroundColor = useColorModeValue('orange.300', 'blue.900');
 
   const onSetTheme = () => {
-    console.log(state.isLightTheme);
     if (state.isLightTheme) {
       dipatch({ type: 'dark' });
     }
     if (!state.isLightTheme) {
       dipatch({ type: 'light' });
     }
+    onChange();
   };
 
   return (
     <>
       <Box
         paddingX={2}
-        background="blueviolet"
+        background={switchBackgroundColor}
         rounded={18}
         width="100px"
         border="2px"
         borderColor="blue.400"
+        aria-label="ssssss"
       >
         <Button
           display="flex"
           flexDirection="row"
           justifyContent="space-between"
           background="twitter.300"
+          aria-label={ariaLabel}
           className={`
           ${styles.button} 
           ${state.isLeftAnimation && styles.leftIcon} 
@@ -66,14 +74,12 @@ export const SwithWithIcons = ({ leftIcon = '🌞', rightIcon = '🌙' }) => {
           <Text
             visibility={state.isLightTheme ? 'visible' : 'hidden'}
             fontSize="2xl"
-            pX={5}
           >
             {leftIcon}
           </Text>
           <Text
             visibility={state.isLightTheme ? 'hidden' : 'visible'}
             fontSize="2xl"
-            pX={5}
           >
             {rightIcon}
           </Text>
