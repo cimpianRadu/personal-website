@@ -11,19 +11,26 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js! Radu's site</a>
-        </h1> */}
-        <Heading>Hi there! Nice to see you here 🥰 👀</Heading>
-        <Text>Since you are here, please let me introduce myself. 💁🏻‍♂️</Text>
-        <Heading>
-          I'm Radu Cîmpian, UI sofware engineer and I build web and mobile
-          applications
-        </Heading>
-        <Heading>Tech stack that I used for building products</Heading>
-        <Text>
-          React JS, React Native, GraphQL, Next.js, Redux, Mobx State Tree
-        </Text>
+        <section>
+          <Heading>Hi there! Nice to see you here 🥰 👀</Heading>
+          <Text>Since you are here, please let me introduce myself. 💁🏻‍♂️</Text>
+        </section>
+        <section>
+          <Heading>
+            I'm Radu Gheorghe Cîmpian, 27 years old, I live in the heart of
+            Transylvania 🧛‍♂️ and I build web and mobile applications using
+            Javascript technologies.
+          </Heading>
+        </section>
+        <section>
+          <Heading textAlign="center">
+            Tech stack that I used for building products
+          </Heading>
+          <Text>
+            React JS, React Native, REST API, GraphQL, Next.js, Redux, Mobx
+            State Tree
+          </Text>
+        </section>
       </main>
     </div>
   );
