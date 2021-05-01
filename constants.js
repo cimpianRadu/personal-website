@@ -18,3 +18,42 @@ export const SOCIAL_MEDIA_URL = {
     label: 'TWEETER_PROFILE',
   },
 };
+
+export const techCards = [
+  {
+    id: 5,
+    label: 'React Native',
+  },
+  {
+    id: 1,
+    label: 'JS',
+  },
+  {
+    id: 4,
+    label: 'React JS',
+  },
+  {
+    id: 2,
+    label: 'Typescript',
+  },
+  {
+    id: 3,
+    label: 'GraphQL',
+  },
+  {
+    id: 6,
+    label: 'REST API',
+  },
+  {
+    id: 7,
+    label: 'Next.js',
+  },
+  {
+    id: 8,
+    label: 'Redux',
+  },
+  {
+    id: 9,
+    label: 'Mobx State Tree',
+  },
+];

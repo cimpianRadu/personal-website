@@ -1,14 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {
-  Text,
-  Heading,
-  Spacer,
-  Box,
-  VStack,
-  Image,
-  Flex,
-} from '@chakra-ui/react';
+import { Text, Heading, VStack, Flex } from '@chakra-ui/react';
+import { TechStack } from '../components';
 
 export default function Home() {
   return (
@@ -34,11 +27,7 @@ export default function Home() {
             Javascript technologies. You can check out some of my work here
           </Heading>
 
-          <Heading>Tech stack 🥞</Heading>
-          <Text>
-            React JS, React Native, Javascript, Typescript, REST API, GraphQL,
-            Next.js, Redux, Mobx State Tree
-          </Text>
+          <TechStack />
         </VStack>
       </main>
     </div>
