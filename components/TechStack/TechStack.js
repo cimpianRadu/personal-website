@@ -1,19 +1,17 @@
-import { useState } from 'react';
-import { Heading } from '@chakra-ui/react';
-import { TechStackCard } from '../TechStackCard/TechStackCard';
+import { useState, useEffect } from 'react';
+import { Spacer } from '@chakra-ui/react';
+import { TechStackCardAnimated } from '../TechStackCardAnimated/TechStackCardAnimated';
 
-export const TechStack = ({ sectionTitle = 'Tech stack 🥞' }) => {
+export const TechStack = () => {
   const [sholdDisplayStack, setShouldDisplayStack] = useState(false);
+
+  useEffect(() => {
+    setTimeout(setShouldDisplayStack(true), 5000);
+  }, []);
   return (
     <>
-      <Heading
-        onMouseEnter={() => {
-          setShouldDisplayStack(true);
-        }}
-      >
-        {sectionTitle}
-      </Heading>
-      {sholdDisplayStack && <TechStackCard />}
+      <Spacer />
+      {sholdDisplayStack && <TechStackCardAnimated />}
     </>
   );
 };

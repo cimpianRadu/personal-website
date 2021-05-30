@@ -57,3 +57,7 @@ export const techCards = [
     label: 'Mobx State Tree',
   },
 ];
+
+export const CAROUSEL_ITEM_TYPES = {
+  CARD: 'CARD',
+};

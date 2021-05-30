@@ -1,8 +1,25 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Text, Heading, VStack, Flex } from '@chakra-ui/react';
-import { TechStack } from '../components';
+import { Carousel, TechStackCard, TechStack } from '../components';
 
+const items = [
+  {
+    title: 'React',
+  },
+  {
+    title: 'React Native',
+  },
+  {
+    title: 'GraphQL',
+  },
+  {
+    title: 'Next Js',
+  },
+  {
+    title: 'REST',
+  },
+];
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -22,9 +39,14 @@ export default function Home() {
             </article>
           </Flex>
           <Heading textAlign="center">
-            I'm Radu Gheorghe Cîmpian, 27 years old and I live in the heart of
-            Transylvania 🧛‍♂️ <br /> I build web and mobile applications using
-            Javascript technologies. You can check out some of my work here
+            I'm Radu Gheorghe Cîmpian, 27 years old and I live in the{' '}
+            <a href="https://goo.gl/maps/iiwcpDQ7eWaqRsDn6">
+              {' '}
+              heart of Transylvania 🧛‍♂️
+            </a>{' '}
+            <br /> I'm a software engineer who loves to build web and mobile
+            applications using Javascript ecosystem. Bellow are some of my
+            favorite tools to use.
           </Heading>
 
           <TechStack />
