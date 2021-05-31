@@ -19,6 +19,7 @@ export const Header = () => {
       background={headerBackground}
       position="sticky"
       top={0}
+      zIndex={100}
     >
       <Flex alignItems="center">
         <Heading color="blue.500" fontFamily="cursive" size="md">

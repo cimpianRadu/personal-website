@@ -18,3 +18,46 @@ export const SOCIAL_MEDIA_URL = {
     label: 'TWEETER_PROFILE',
   },
 };
+
+export const TECH_CARDS = [
+  {
+    id: 5,
+    label: 'Redux',
+  },
+  {
+    id: 1,
+    label: 'Mobx State Tree',
+  },
+  {
+    id: 4,
+    label: 'Next.js',
+  },
+  {
+    id: 2,
+    label: 'Typescript',
+  },
+  {
+    id: 3,
+    label: 'GraphQL',
+  },
+  {
+    id: 6,
+    label: 'REST API',
+  },
+  {
+    id: 7,
+    label: 'React JS',
+  },
+  {
+    id: 8,
+    label: 'React Native',
+  },
+  {
+    id: 9,
+    label: 'JavaSript',
+  },
+];
+
+export const CAROUSEL_ITEM_TYPES = {
+  CARD: 'CARD',
+};
