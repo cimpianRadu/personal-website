@@ -1,25 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Text, Heading, VStack, Flex } from '@chakra-ui/react';
-import { Carousel, TechStackCard, TechStack } from '../components';
+import { TechStack } from '../components';
 
-const items = [
-  {
-    title: 'React',
-  },
-  {
-    title: 'React Native',
-  },
-  {
-    title: 'GraphQL',
-  },
-  {
-    title: 'Next Js',
-  },
-  {
-    title: 'REST',
-  },
-];
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -31,7 +14,7 @@ export default function Home() {
       <main className={styles.main}>
         <VStack spacing="12">
           <Flex justifyContent="center">
-            <article>
+            <article style={{ textAlign: 'center' }}>
               <Heading>Hi there! Nice to see you here 🥰 👀</Heading>
               <Text fontSize="2xl">
                 Since you are here, please let me introduce myself. 💁🏻‍♂️
@@ -46,7 +29,7 @@ export default function Home() {
             </a>{' '}
             <br /> I'm a software engineer who loves to build web and mobile
             applications using Javascript ecosystem. Bellow are some of my
-            favorite tools to use.
+            favorite tools for building apps.
           </Heading>
 
           <TechStack />

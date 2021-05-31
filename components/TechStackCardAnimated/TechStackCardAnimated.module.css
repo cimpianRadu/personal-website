@@ -1,4 +1,12 @@
 .techStackCardContainer {
-  z-index: -1 !important;
   margin-top: 5px !important;
+}
+
+.scaled {
+  transform: scale(2);
+}
+
+.rise:hover {
+  transform: translateY(-50px) scale(2.2);
+  animation-timing-function: ease-in-out;
 }

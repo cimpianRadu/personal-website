@@ -19,18 +19,18 @@ export const SOCIAL_MEDIA_URL = {
   },
 };
 
-export const techCards = [
+export const TECH_CARDS = [
   {
     id: 5,
-    label: 'React Native',
+    label: 'Redux',
   },
   {
     id: 1,
-    label: 'JS',
+    label: 'Mobx State Tree',
   },
   {
     id: 4,
-    label: 'React JS',
+    label: 'Next.js',
   },
   {
     id: 2,
@@ -46,15 +46,15 @@ export const techCards = [
   },
   {
     id: 7,
-    label: 'Next.js',
+    label: 'React JS',
   },
   {
     id: 8,
-    label: 'Redux',
+    label: 'React Native',
   },
   {
     id: 9,
-    label: 'Mobx State Tree',
+    label: 'JavaSript',
   },
 ];
 

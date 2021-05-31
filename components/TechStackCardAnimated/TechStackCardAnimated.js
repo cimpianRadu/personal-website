@@ -1,8 +1,9 @@
 import React from 'react';
-import { useSpring, interpolate, animated, useSprings } from 'react-spring';
-import { Box } from '@chakra-ui/react';
-import { techCards } from '../../constants';
+import { interpolate, animated, useSprings } from 'react-spring';
+import { Box, Text } from '@chakra-ui/react';
+import { TECH_CARDS } from '../../constants';
 import styles from './TechStackCardAnimated.module.css';
+import { useColorMode } from '@chakra-ui/react';
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
@@ -20,16 +21,18 @@ const trans = (r, s) =>
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 export const TechStackCardAnimated = () => {
-  const [springs, api] = useSprings(techCards.length, (i) => ({
+  const { colorMode } = useColorMode();
+  const [springs, api] = useSprings(TECH_CARDS.length, (i) => ({
     ...to(i),
     from: from(i),
   }));
   return (
     <>
       {springs.map(({ x, y, rot, scale }, index) => {
+        const isLast = index === springs.length - 1;
         return (
           <animated.div
-            key={techCards[index].label}
+            key={TECH_CARDS[index].label}
             className={styles.techStackCardContainer}
             style={{
               transform: interpolate(
@@ -43,8 +46,16 @@ export const TechStackCardAnimated = () => {
                 transform: interpolate([rot, scale], trans),
               }}
             >
-              <Box padding={4} border="1px">
-                {techCards[index].label}
+              <Box
+                padding={4}
+                border="1px"
+                borderRadius="sm"
+                className={`${styles.scaled} ${!isLast && styles.rise}`}
+                backgroundColor={
+                  colorMode === 'light' ? 'pink.200' : 'pink.800'
+                }
+              >
+                <Text fontWeight="bold"> {TECH_CARDS[index].label}</Text>
               </Box>
             </animated.div>
           </animated.div>
