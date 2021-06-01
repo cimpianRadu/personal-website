@@ -8,11 +8,11 @@ function MyApp({ Component, pageProps }) {
     <>
       <ChakraProvider theme={theme}>
         {/* <Box bgGradient="linear(to-t, #e74c3c, #000000)"> */}
-        <Box>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
-        </Box>
+        {/* <Box> */}
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+        {/* </Box> */}
       </ChakraProvider>
     </>
   );

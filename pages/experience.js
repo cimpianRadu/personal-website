@@ -1,14 +1,10 @@
-import { Flex, Text } from '@chakra-ui/layout';
-import styles from '../styles/Home.module.css';
-import { BulletItem, TimeInterval } from '../components';
+import { TimeLine } from '../components';
+import { TIMELINE_ITEMS } from '../assets/timeline-items';
 
 const Experience = () => (
-  <Flex padding="4">
-    <TimeInterval />
-    <Flex flexDirection="column" className={styles.container} flex={1}>
-      <BulletItem title="CS Bachelor degree" />
-    </Flex>
-  </Flex>
+  <>
+    <TimeLine items={TIMELINE_ITEMS} />
+  </>
 );
 
 export default Experience;

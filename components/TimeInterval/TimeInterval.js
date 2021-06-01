@@ -8,13 +8,19 @@ export const TimeInterval = ({
   return (
     <Flex
       flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      h="150px"
-      w="120px"
+      justifyContent="left"
+      alignItems="left"
+      w="fit-content"
+      padding="8px 4px"
     >
       <Text as="b">{start}</Text>
-      <Divider orientation={dividerOrientation} />
+      <Divider
+        h="120px"
+        alignItems="center"
+        justifyContent="center"
+        alignSelf="center"
+        orientation={dividerOrientation}
+      />
       <Text as="b">{end}</Text>
     </Flex>
   );
