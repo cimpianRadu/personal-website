@@ -2,13 +2,15 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Text, Heading, VStack, Flex } from '@chakra-ui/react';
 import { TechStack } from '../components';
+import { TimeLine } from '../components';
+import { TIMELINE_ITEMS } from '../assets/timeline-items';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Radu G Cîmpian</title>
+        <link rel="icon" href="/logo.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -23,7 +25,11 @@ export default function Home() {
           </Flex>
           <Heading textAlign="center">
             I'm Radu Gheorghe Cîmpian, 27 years old and I live in the{' '}
-            <a href="https://goo.gl/maps/iiwcpDQ7eWaqRsDn6">
+            <a
+              className={styles.underlinedLink}
+              target="_blank"
+              href="https://goo.gl/maps/iiwcpDQ7eWaqRsDn6"
+            >
               {' '}
               heart of Transylvania 🧛‍♂️
             </a>{' '}
@@ -31,8 +37,16 @@ export default function Home() {
             applications using Javascript ecosystem. Bellow are some of my
             favorite tools for building apps.
           </Heading>
-
           <TechStack />
+
+          <Flex
+            flex={1}
+            minHeight="full"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <TimeLine items={TIMELINE_ITEMS} />
+          </Flex>
         </VStack>
       </main>
     </div>

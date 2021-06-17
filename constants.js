@@ -1,7 +1,7 @@
 export const ROUTES = [
   { href: '/', title: 'Home' },
-  { href: '/experience', title: 'Experience' },
-  { href: '/about', title: 'About' },
+  { href: '/experience', title: 'Work Experience' },
+  // { href: '/about', title: 'About' },
 ];
 
 export const SOCIAL_MEDIA_URL = {

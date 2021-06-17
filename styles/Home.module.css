@@ -17,6 +17,10 @@
   text-decoration: none;
 }
 
+.underlinedLink {
+  text-decoration: underline;
+}
+
 .title a:hover,
 .title a:focus,
 .title a:active {

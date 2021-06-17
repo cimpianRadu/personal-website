@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Box, Text, Flex } from '@chakra-ui/react';
+import Markdown from 'markdown-to-jsx';
 
-export const BottomExpandableCard = ({ text }) => {
+export const BottomExpandableCard = ({ text, shouldShowMore = false }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   return (
     <Box
@@ -12,7 +13,9 @@ export const BottomExpandableCard = ({ text }) => {
       height="fit-content"
       width="fit-content"
     >
-      <Text noOfLines={isCollapsed ? 4 : null}>{text}</Text>
+      <Box h={isCollapsed ? '80px' : 'fit-content'} overflow="hidden">
+        <Markdown>{text}</Markdown>
+      </Box>
       <Box
         borderRadius="sm"
         minH={'22px'}
@@ -31,18 +34,20 @@ export const BottomExpandableCard = ({ text }) => {
           opacity="1"
           backgroundColor="transparent"
         >
-          <Box opacity="1">
-            <Text
-              opacity="1"
-              padding="4px"
-              backgroundColor="twitter.200"
-              borderRadius={5}
-              onClick={() => setIsCollapsed(!isCollapsed)}
-              as="b"
-            >
-              {isCollapsed ? 'View more' : 'Show less'}
-            </Text>
-          </Box>
+          {shouldShowMore && (
+            <Box opacity="1">
+              <Text
+                opacity="1"
+                padding="4px"
+                backgroundColor="twitter.200"
+                borderRadius={5}
+                onClick={() => setIsCollapsed(!isCollapsed)}
+                as="b"
+              >
+                {isCollapsed ? 'View more' : 'Show less'}
+              </Text>
+            </Box>
+          )}
         </Flex>
         <Box />
       </Box>

@@ -1,4 +1,4 @@
-import { Flex, Text, Divider } from '@chakra-ui/react';
+import { Flex, Text, Divider, Box } from '@chakra-ui/react';
 
 export const TimeInterval = ({
   start = '2002-12-09',
@@ -13,15 +13,19 @@ export const TimeInterval = ({
       w="fit-content"
       padding="8px 4px"
     >
-      <Text as="b">{start}</Text>
+      <Text w="max-content" as="b">
+        {start}
+      </Text>
       <Divider
-        h="120px"
+        h="50px"
         alignItems="center"
         justifyContent="center"
         alignSelf="center"
         orientation={dividerOrientation}
       />
-      <Text as="b">{end}</Text>
+      <Text w="max-content" as="b">
+        {end}
+      </Text>
     </Flex>
   );
 };

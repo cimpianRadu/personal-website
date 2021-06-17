@@ -26,7 +26,7 @@ export const Header = () => {
           Radu G. Cîmpian
         </Heading>
       </Flex>
-      <Navigation routes={ROUTES} />
+      {/* <Navigation routes={ROUTES} /> */}
       <Spacer />
       <Flex flex={1} justifyContent="flex-end" alignItems="flex-end">
         <SwithWithIcons onChange={toggleColorMode} />
