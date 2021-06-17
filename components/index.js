@@ -6,3 +6,7 @@ export * from './TechStackCardAnimated/TechStackCardAnimated';
 export * from './TechStack/TechStack';
 export * from './TechStackCard/TechStackCard';
 export * from './Carousel/Carousel';
+export * from './BulletItem/BulletItem';
+export * from './TimeInterval/TimeInterval';
+export * from './BottomExpandableCard/BottomExpandableCard';
+export * from './TimeLine/TimeLine';

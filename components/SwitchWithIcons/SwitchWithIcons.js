@@ -33,7 +33,7 @@ export const SwithWithIcons = ({
   ariaLabel = '',
 }) => {
   const [state, dipatch] = useReducer(reducer, initialState);
-  const switchBackgroundColor = useColorModeValue('orange.300', 'blue.900');
+  const switchBackgroundColor = useColorModeValue('blue.900', 'orange.100');
 
   const onSetTheme = () => {
     if (state.isLightTheme) {
@@ -75,13 +75,13 @@ export const SwithWithIcons = ({
             visibility={state.isLightTheme ? 'visible' : 'hidden'}
             fontSize="2xl"
           >
-            {leftIcon}
+            {rightIcon}
           </Text>
           <Text
             visibility={state.isLightTheme ? 'hidden' : 'visible'}
             fontSize="2xl"
           >
-            {rightIcon}
+            {leftIcon}
           </Text>
         </Button>
       </Box>

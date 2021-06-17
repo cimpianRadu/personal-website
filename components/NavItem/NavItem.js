@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { Text } from '@chakra-ui/react';
+import { Text, Box } from '@chakra-ui/react';
 
 export const NavItem = ({ href, isActive, title, onToggle }) => {
   return (
-    <>
+    <Box marginRight={[0, 10, 0]} marginLeft={[0, 10, 0]}>
       <Link href={href}>
         <a>
           <Text
+            w="max-content"
             decoration={isActive ? 'underline' : 'none'}
             onClick={() => onToggle(href)}
             fontSize={isActive ? 'xl' : 'sm'}
@@ -15,6 +16,6 @@ export const NavItem = ({ href, isActive, title, onToggle }) => {
           </Text>
         </a>
       </Link>
-    </>
+    </Box>
   );
 };

@@ -29,9 +29,9 @@ export const Footer = () => {
         justifyContent="space-around"
         flexDirection={['column', 'column', 'row']}
       >
-        <Box display={['flex', 'flex', 'none']}>
+        {/* <Box display={['flex', 'flex', 'none']}>
           <NavigationMobile routes={ROUTES} />
-        </Box>
+        </Box> */}
         <Flex alignItems="center">
           <Text fontSize="xl" fontWeight="semibold" marginRight={8}>
             Let's get in touch!
