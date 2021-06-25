@@ -48,7 +48,7 @@ export default function Home() {
           <br />
           <TechStack />
           <Divider borderWidth={3} marginY={8} />
-          <Heading> Here is my developer journey up until now 🧭</Heading>
+          <Heading> Here is my work experience journey up until now 🧭</Heading>
           <Flex
             flex={1}
             minHeight="full"
