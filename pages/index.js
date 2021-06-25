@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Text, Heading, VStack, Flex } from '@chakra-ui/react';
-import { TechStack } from '../components';
-import { TimeLine } from '../components';
+import { TechStack, TimeLine } from '../components';
 import { TIMELINE_ITEMS } from '../assets/timeline-items';
+import { CLUJ_GOOGLE_MAPS } from '../constants';
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
             <a
               className={styles.underlinedLink}
               target="_blank"
-              href="https://goo.gl/maps/iiwcpDQ7eWaqRsDn6"
+              href={CLUJ_GOOGLE_MAPS}
             >
               {' '}
               heart of Transylvania 🧛‍♂️
