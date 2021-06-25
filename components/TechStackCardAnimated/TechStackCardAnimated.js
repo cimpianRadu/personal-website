@@ -55,7 +55,9 @@ export const TechStackCardAnimated = () => {
                   colorMode === 'light' ? 'pink.200' : 'pink.800'
                 }
               >
-                <Text fontWeight="bold"> {TECH_CARDS[index].label}</Text>
+                <Text width="fit-content" fontWeight="bold">
+                  {TECH_CARDS[index].label}
+                </Text>
               </Box>
             </animated.div>
           </animated.div>

@@ -76,7 +76,7 @@ export const Footer = () => {
               <Text>radu.cimpian94@gmail.com</Text>
             </Link>
           </Box>
-          <Center height={10} marginX={4}>
+          {/* <Center height={10} marginX={4}>
             <Divider orientation="vertical" />
           </Center>
           <Box textAlign="center">
@@ -84,7 +84,7 @@ export const Footer = () => {
             <Link href="tel:+40-075-154-7174">
               <Text>+40 (075) 154-7174</Text>
             </Link>
-          </Box>
+          </Box> */}
         </Flex>
         <Box>
           <Text fontFamily="cursive" fontSize="xl" fontWeight="semibold">

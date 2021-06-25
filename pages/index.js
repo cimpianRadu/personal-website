@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { Text, Heading, VStack, Flex } from '@chakra-ui/react';
+import { Text, Heading, VStack, Flex, Divider, Box } from '@chakra-ui/react';
 import { TechStack, TimeLine } from '../components';
 import { TIMELINE_ITEMS } from '../assets/timeline-items';
 import { CLUJ_GOOGLE_MAPS } from '../constants';
@@ -24,7 +24,7 @@ export default function Home() {
             </article>
           </Flex>
           <Heading textAlign="center">
-            I'm Radu Gheorghe Cîmpian, 27 years old and I live in the{' '}
+            I'm Radu Gheorghe Cîmpian, 27 years old and I live in{' '}
             <a
               className={styles.underlinedLink}
               target="_blank"
@@ -33,12 +33,22 @@ export default function Home() {
               {' '}
               heart of Transylvania 🧛‍♂️
             </a>{' '}
-            <br /> I'm a software engineer who loves to build web and mobile
-            applications using Javascript ecosystem. Bellow are some of my
-            favorite tools for building apps.
+            <br />
+            <br />
+            <article>
+              I'm an experinced software engineer specialized on building
+              beautiful applications using Javascript ecosystem. I contribuited
+              on building digital products in various domains from
+              <i> education </i> 📚 <i>, agriculture </i>🚜 to{' '}
+              <i>betting & gambling </i>🎰
+              <Divider borderWidth={3} marginY={8} />
+              Bellow are some of my favorite tools for building apps 🧰
+            </article>
           </Heading>
+          <br />
           <TechStack />
-
+          <Divider borderWidth={3} marginY={8} />
+          <Heading> Here is my work experience journey up until now 🧭</Heading>
           <Flex
             flex={1}
             minHeight="full"
