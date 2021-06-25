@@ -61,3 +61,6 @@ export const TECH_CARDS = [
 export const CAROUSEL_ITEM_TYPES = {
   CARD: 'CARD',
 };
+
+export const CLUJ_GOOGLE_MAPS =
+  'https://www.google.ro/maps/place/Cluj-Napoca/@45.8429638,22.770757,6.94z/data=!4m5!3m4!1s0x47490c1f916c0b8b:0xbbc601c331f148b!8m2!3d46.7712101!4d23.6236353';

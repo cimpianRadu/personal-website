@@ -1,6 +1,5 @@
 import { useReducer } from 'react';
-import { Text, Box, Button, useColorModeValue } from '@chakra-ui/react';
-import styles from './SwitchWIthIcons.module.css';
+import { Text, Button, useColorModeValue } from '@chakra-ui/react';
 
 const initialState = {
   isLightTheme: true,
@@ -47,44 +46,22 @@ export const SwithWithIcons = ({
 
   return (
     <>
-      <Box
-        paddingX={2}
+      <Button
+        padding={1}
+        borderRadius="base"
         background={switchBackgroundColor}
-        rounded={18}
-        width="100px"
-        border="2px"
-        borderColor="blue.400"
-        aria-label="ssssss"
+        aria-label={ariaLabel}
+        onClick={onSetTheme}
+        _hover={switchBackgroundColor}
+        _focus={{ borderColor: 'transparent' }}
       >
-        <Button
-          display="flex"
-          flexDirection="row"
-          justifyContent="space-between"
-          background="twitter.300"
-          aria-label={ariaLabel}
-          className={`
-          ${styles.button} 
-          ${state.isLeftAnimation && styles.leftIcon} 
-          ${state.isRightAnimation && styles.rightIcon}
-          `}
-          background="transparent"
-          onClick={onSetTheme}
-          size="xm"
-        >
-          <Text
-            visibility={state.isLightTheme ? 'visible' : 'hidden'}
-            fontSize="2xl"
-          >
-            {rightIcon}
-          </Text>
-          <Text
-            visibility={state.isLightTheme ? 'hidden' : 'visible'}
-            fontSize="2xl"
-          >
-            {leftIcon}
-          </Text>
-        </Button>
-      </Box>
+        <Text display={state.isLightTheme ? 'visible' : 'none'} fontSize="2xl">
+          {rightIcon}
+        </Text>
+        <Text display={state.isLightTheme ? 'none' : 'visible'} fontSize="2xl">
+          {leftIcon}
+        </Text>
+      </Button>
     </>
   );
 };
