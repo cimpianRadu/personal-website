@@ -1,8 +1,8 @@
 self.__RSC_MANIFEST={
   "__ssr_module_mapping__": {
-    "(app-client)/./src/app/page.tsx": {
+    "(app-client)/./node_modules/next/dist/client/image.js": {
       "": {
-        "id": "(sc_client)/./src/app/page.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "",
         "chunks": [
           "app/page:app/page"
@@ -10,7 +10,7 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "*": {
-        "id": "(sc_client)/./src/app/page.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "*",
         "chunks": [
           "app/page:app/page"
@@ -18,7 +18,7 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./src/app/page.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "default",
         "chunks": [
           "app/page:app/page"
@@ -137,9 +137,9 @@ self.__RSC_MANIFEST={
       "static/css/_app-client_src_app_global_css.css"
     ]
   },
-  "/Users/raducimpian/Projects/personal-website/src/app/page.tsx": {
+  "/Users/raducimpian/Projects/personal-website/node_modules/next/dist/client/image.js": {
     "": {
-      "id": "(app-client)/./src/app/page.tsx",
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
         "app/page:app/page"
@@ -147,7 +147,7 @@ self.__RSC_MANIFEST={
       "async": false
     },
     "*": {
-      "id": "(app-client)/./src/app/page.tsx",
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
         "app/page:app/page"
@@ -155,7 +155,33 @@ self.__RSC_MANIFEST={
       "async": false
     },
     "default": {
-      "id": "(app-client)/./src/app/page.tsx",
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    }
+  },
+  "/Users/raducimpian/Projects/personal-website/node_modules/next/dist/esm/client/image.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
         "app/page:app/page"
