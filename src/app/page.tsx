@@ -6,7 +6,7 @@ import { faSquareGithub, faLinkedin, faTwitterSquare } from "@fortawesome/free-b
 
 export default function Page() {
   return (
-    <>
+    <div>
       <p className="text-4xl text-center font-semibold font-display italic underline">It always works on my machine </p>
       <br />
       <div className="px-4">
@@ -14,6 +14,7 @@ export default function Page() {
           I am a Freelancer | Senior React/React Native Developer with more than 6 years experience in this field. I use Javascript technologies to help my
           clients meet their customer needs by creating top-notch products with quality in mind.
         </p>
+
         <br />
         <div className="w-fit">
           <p className="font-semibold text-lg">I am always happy to meet new perople, so let's connect!</p>
@@ -60,6 +61,6 @@ export default function Page() {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
