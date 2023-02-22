@@ -3,17 +3,14 @@ import { DETAILS } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneSquare, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { faSquareGithub, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
-import Image from "next/image";
 
 export default function Page() {
   return (
     <div>
-      {/* <p className="text-4xl text-center font-semibold font-display italic underline">It always works on my machine </p> */}
-      <br />
       <div className="px-4">
         {/* <Image unoptimized={true} alt="React Native GIF" src="/../../public/reactnative.gif" width={100} height={100} /> */}
         <div className="flex items-center justify-center flex-1">
-          <div className="h-60 w-1/2 md:w-3/4  bg-no-repeat bg-react-native" />
+          <div className="h-60 w-[36rem]  bg-no-repeat bg-react-native px-3" />
         </div>
         <p className="text-3xl font-thin text-center">
           I am a Freelancer | Senior React/React Native Developer with more than 6 years experience in this field. I use Javascript technologies to help my
