@@ -19,6 +19,9 @@ module.exports = {
         secondaryGray: "#72757e",
         green: "#2cb67d",
       },
+      backgroundImage: {
+        "react-native": "url('/reactnative.gif')",
+      },
     },
   },
   plugins: [],
