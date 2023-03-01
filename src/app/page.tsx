@@ -3,30 +3,44 @@ import { DETAILS } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneSquare, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { faSquareGithub, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import Avatar from "./home/Avatar";
 
 export default function Page() {
   return (
     <div>
       <div className="px-4">
-        {/* <Image unoptimized={true} alt="React Native GIF" src="/../../public/reactnative.gif" width={100} height={100} /> */}
-        <div className="flex items-center justify-center flex-1">
-          <div className="h-60 w-[36rem]  bg-no-repeat bg-react-native px-3" />
+        <div className="flex items-center justify-center flex-1 py-4">
+          <Avatar />
+          <div className="w-12">{/* <p className="text-3xl font-normal text-center">Mantra</p> */}</div>
+          <div className="bg-slate-50 p-1 rounded-xl bg-gradient-to-r from-red-400 via-wolf to-slate-300">
+            <div className="h-60 w-[36rem] bg-no-repeat bg-react-native px-3 rounded-lg" />
+          </div>
         </div>
-        <p className="text-3xl font-thin text-center">
-          I am a Freelancer | Senior React/React Native Developer with more than 6 years experience in this field. I use Javascript technologies to help my
-          clients meet their customer needs by creating top-notch products with quality in mind.
-        </p>
 
+        <p className="text-3xl font-normal">Looking for an experienced React Native developer? Look no further! </p>
         <br />
-        <div className="w-fit">
+        <p>
+          As a mobile application developer with over 6 years of experience in software development, I am confident that I can deliver efficient, scalable, and
+          top-performing applications for both Android and iOS platforms. I have extensive experience in developing both greenfield and brownfield mobile
+          applications, and I am adept at migrating products from other technologies to React Native.
+        </p>
+        <br />
+        <p>
+          I am dedicated to staying up-to-date with the latest technologies and best practices to provide the best solutions for my clients. My deep
+          understanding of the React Native ecosystem, combined with my expertise in building performant and maintainable applications, make me a valuable asset
+          to any project.
+        </p>
+        <br />
+        <p>
+          In addition, my ability to collaborate effectively with cross-functional teams allows me to work seamlessly with stakeholders and ensure the
+          successful delivery of projects. I am passionate about bringing ideas to life and look forward to the opportunity to work with you.
+        </p>
+        <br />
+        <p>Let's work together to bring your ideas to life!</p>
+        {/* <div className="w-fit">
           <p className="font-semibold text-lg">I am always happy to meet new perople, so let's connect!</p>
           <br />
           <div className="flex flex-row justify-around">
-            {/* <div className="border w-11 h-11">
-              <FontAwesomeIcon icon={faLinkedinIn} style={{ fontSize: 100, color: "orange" }} />
-              <FontAwesomeIcon icon={faGithub} style={{ fontSize: 100, color: "orange" }} />
-            </div> */}
-
             <div className="w-10 h-10">
               <a href="https://www.linkedin.com/in/radu-cimpian/" target="_">
                 <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 100, color: "#0077b5" }} />
@@ -54,14 +68,14 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <br />
-        <div className="items-center ">
+        <br /> */}
+        {/* <div className="items-center ">
           <p className="font-semibold text-2xl pl-2">About me</p>
 
           {DETAILS.map((detail, index) => {
             return <DetailItem key={index} label={detail.label} value={detail.value} />;
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

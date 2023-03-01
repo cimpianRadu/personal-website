@@ -34,6 +34,20 @@ module.exports = {
         highlight: "#7f5af0",
         secondaryGray: "#72757e",
         green: "#2cb67d",
+        //secondary
+        macaw: "#1CB0F6",
+        cardinal: "#FF4B4B",
+        bee: "#FFC800",
+        fox: "#FF9600",
+        beetle: "#CE82FF",
+        humpack: "#2B70C9",
+        // neutrals colors
+        eel: "#4B4B4B",
+        wolf: "#777777",
+        hare: "#AFAFAF",
+        swan: "#E5E5E5",
+        polar: "#F7F7F7",
+        snow: "#FFFFFF",
       },
       backgroundImage: {
         "react-native": "url('/reactnative.gif')",
